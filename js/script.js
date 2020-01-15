@@ -1,11 +1,25 @@
-var listaNumeri = [];
+var punti = 0;
+var numeriUser = [];
+var tentativi = 3;
 
-
-function inserimento(numeroInserito, listaNumeri) {
-  for (var i = 0; i < 4; i++) {
-    var numeroInserito = prompt("inserisci numero:");
-    listaNumeri = listaNumeri.push(numeroInserito);
-  }
-  return listaNumeri;
+function getRandomNumber(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  var result = Math.floor(Math.random() * (max - min + 1)) + min;
+  return result;
 }
-console.log(listaNumeri);
+
+function inArray(array, element){
+  for (var i = 0; i < array.length; i++) {
+    console.log(array[i]);
+    if (array[i] == element) {
+      return true;
+    }
+  }
+}
+while (numeriUser.length < tentativi) {
+  var userNumber = parseInt(prompt("Inserisci un numero da 1 a 100:"));
+  if (true) {
+
+  }
+}
